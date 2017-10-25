@@ -27,8 +27,8 @@ public class CounterControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    private static final String SEARCH_API = "/counter-api/search";
-    private static final String TOP_API = "/counter-api/top";
+    private static final String SEARCH_API = "/countapi/count";
+    private static final String TOP_API = "/countapi/top";
     
     private static final String AUTH_HEADER = "Authorization";
     private static final String BASIC_AUTH = "Basic dXNlcjpwYXNzMTIz";

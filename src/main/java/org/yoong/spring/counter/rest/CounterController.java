@@ -13,7 +13,7 @@ import org.yoong.spring.counter.domain.SearchText;
 import org.yoong.spring.counter.service.CounterService;
 
 @RestController
-@RequestMapping(value = "/counter-api")
+@RequestMapping(value = "/countapi")
 public class CounterController {
     
     private static final Logger logger = LoggerFactory.getLogger(CounterController.class);
@@ -25,10 +25,10 @@ public class CounterController {
         this.counterService = counterService;
     }
 
-    @RequestMapping(path = "/search", method = RequestMethod.POST, consumes = "application/json")
+    @RequestMapping(path = "/count", method = RequestMethod.POST, consumes = "application/json")
     public SearchResponse search(@RequestBody SearchText searchText) {
         
-        logger.debug("received SEARCH: " + searchText.getSearchText());
+        logger.debug("received COUNT: " + searchText.getSearchText());
         
         return counterService.search(searchText.getSearchText());
     }
