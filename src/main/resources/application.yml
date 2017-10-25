@@ -1,0 +1,4 @@
+logging:
+  level:
+    org.yoong: DEBUG
+  file: debug.log
